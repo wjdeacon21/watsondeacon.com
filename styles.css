@@ -151,6 +151,32 @@ body {
     opacity: 0.7;
 }
 
+.bio-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.bio-image-container {
+    flex: 0 0 auto;
+}
+
+.bio-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.bio-content {
+    flex: 1;
+}
+
 .bio-text {
     width: 100%;
     font-family: Arial, sans-serif;
