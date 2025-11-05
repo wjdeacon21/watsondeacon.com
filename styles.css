@@ -8,7 +8,7 @@ body {
     background-color: white;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
@@ -199,5 +199,94 @@ body {
     font-size: 24px;
     color: #000;
     text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        width: 100%;
+    }
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .center-image {
+        max-width: 90%;
+        max-height: 40vh;
+    }
+
+    .navigation {
+        gap: 24px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 18px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .bio-image {
+        max-width: 70vw;
+    }
+
+    .bio-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .poems-navigation {
+        gap: 20px;
+    }
+
+    .poem-nav-item {
+        font-size: 20px;
+    }
+
+    .matins-container {
+        padding: 20px;
+        height: auto;
+    }
+
+    .matins-header {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .matins-text {
+        font-size: 16px;
+        line-height: 1.1;
+    }
+
+    .home-button {
+        bottom: 12px;
+        left: 12px;
+        font-size: 16px;
+    }
+
+    .back-button {
+        top: 12px;
+        left: 12px;
+        font-size: 16px;
+    }
+
+    .contact-text {
+        font-size: 20px;
+    }
 }
 
