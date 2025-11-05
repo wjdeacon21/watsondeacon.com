@@ -101,6 +101,7 @@ body {
     margin: 0 auto;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: auto; /* allow horizontal scroll for long lines */
 }
 
 .matins-header {
@@ -117,7 +118,9 @@ body {
     font-size: 16px;
     color: #000;
     text-align: left;
-    white-space: pre-wrap;
+    white-space: pre; /* preserve line breaks and spaces; no wrapping */
+    overflow-wrap: normal; /* don't force breaks */
+    word-break: normal; /* don't break words */
     line-height: 0.8;
 }
 
@@ -261,6 +264,7 @@ body {
     .matins-container {
         padding: 20px;
         height: auto;
+        overflow-x: auto; /* keep horizontal scroll on mobile */
     }
 
     .matins-header {
