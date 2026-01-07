@@ -62,14 +62,6 @@ body {
     text-transform: lowercase;
 }
 
-.poems-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-}
-
 .poems-navigation {
     display: flex;
     flex-direction: column;
@@ -88,14 +80,7 @@ body {
     opacity: 0.7;
 }
 
-.poem-text {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    color: #000;
-    text-transform: lowercase;
-}
-
-.matins-container {
+.poem-container {
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
@@ -104,7 +89,7 @@ body {
     overflow-x: auto; /* allow horizontal scroll for long lines */
 }
 
-.matins-header {
+.poem-header {
     font-family: Arial, sans-serif;
     font-size: 32px;
     color: #000;
@@ -112,7 +97,7 @@ body {
     text-align: left;
 }
 
-.matins-text {
+.poem-text {
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -154,7 +139,7 @@ body {
     opacity: 0.7;
 }
 
-.bio-container {
+.two-column-container {
     display: flex;
     gap: 40px;
     padding: 40px;
@@ -165,36 +150,28 @@ body {
     align-items: center;
 }
 
-.bio-image-container {
+.two-column-image-container {
     flex: 0 0 auto;
 }
 
-.bio-image {
+.two-column-image {
     max-width: 400px;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.bio-content {
+.two-column-content {
     flex: 1;
 }
 
-.bio-text {
+.about-text {
     width: 100%;
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #000;
     text-align: left;
     line-height: 1.6;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
 }
 
 .contact-text {
@@ -236,7 +213,7 @@ body {
         left: 12px;
     }
 
-    .bio-container {
+    .two-column-container {
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -244,11 +221,11 @@ body {
         height: auto;
     }
 
-    .bio-image {
+    .two-column-image {
         max-width: 70vw;
     }
 
-    .bio-text {
+    .about-text {
         font-size: 16px;
         line-height: 1.6;
     }
@@ -261,18 +238,18 @@ body {
         font-size: 20px;
     }
 
-    .matins-container {
+    .poem-container {
         padding: 20px;
         height: auto;
         overflow-x: auto; /* keep horizontal scroll on mobile */
     }
 
-    .matins-header {
+    .poem-header {
         font-size: 26px;
         margin-bottom: 20px;
     }
 
-    .matins-text {
+    .poem-text {
         font-size: 16px;
         line-height: 1.1;
     }
