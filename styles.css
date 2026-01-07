@@ -46,6 +46,11 @@ body {
     color: #000;
     text-decoration: none;
     text-transform: lowercase;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item:hover {
@@ -75,6 +80,11 @@ body {
     font-size: 24px;
     color: #000;
     text-decoration: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .poem-nav-item:hover {
@@ -120,6 +130,11 @@ body {
     color: #000;
     text-decoration: none;
     text-transform: lowercase;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .back-button:hover {
@@ -136,6 +151,11 @@ body {
     color: #000;
     text-decoration: none;
     text-transform: lowercase;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home-button:hover {
