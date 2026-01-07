@@ -50,6 +50,7 @@ body {
 
 .nav-item:hover {
     opacity: 0.7;
+    font-style: italic;
 }
 
 .name {
@@ -78,6 +79,7 @@ body {
 
 .poem-nav-item:hover {
     opacity: 0.7;
+    font-style: italic;
 }
 
 .poem-container {
@@ -122,6 +124,7 @@ body {
 
 .back-button:hover {
     opacity: 0.7;
+    font-style: italic;
 }
 
 .home-button {
@@ -137,6 +140,7 @@ body {
 
 .home-button:hover {
     opacity: 0.7;
+    font-style: italic;
 }
 
 .two-column-container {
