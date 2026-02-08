@@ -1,16 +1,30 @@
+/* ── Reset ── */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ── Base ── */
 body {
     background-color: #f7f6f0;
     height: 100vh;
     width: 100vw;
     overflow: auto;
+    font-family: Arial, sans-serif;
+    color: #000;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ── Layout (homepage) ── */
 .container {
     position: relative;
     width: 100%;
@@ -41,118 +55,20 @@ body {
 }
 
 .nav-item {
-    font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #000;
     text-decoration: none;
     text-transform: lowercase;
-}
-
-.nav-item:hover {
-    opacity: 0.7;
-    font-style: italic;
 }
 
 .name {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    font-family: Arial, sans-serif;
     font-size: 24px;
-    color: #000;
     text-transform: lowercase;
 }
 
-.poems-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
-.poem-nav-item {
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    color: #000;
-    text-decoration: none;
-}
-
-.poem-nav-item:hover {
-    opacity: 0.7;
-    font-style: italic;
-}
-
-.poem-container {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: auto; /* allow horizontal scroll for long lines */
-}
-
-.poem-header {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    color: #000;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.poem-text {
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #000;
-    text-align: left;
-    white-space: pre; /* preserve line breaks and spaces; no wrapping */
-    overflow-wrap: normal; /* don't force breaks */
-    word-break: normal; /* don't break words */
-    line-height: 0.8;
-}
-
-.back-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    color: #000;
-    text-decoration: none;
-    text-transform: lowercase;
-    background-color: white;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.back-button:hover {
-    opacity: 0.7;
-    font-style: italic;
-}
-
-.home-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    color: #000;
-    text-decoration: none;
-    text-transform: lowercase;
-    background-color: white;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.home-button:hover {
-    opacity: 0.7;
-    font-style: italic;
-}
-
+/* ── Two-column layout ── */
 .two-column-container {
     display: flex;
     gap: 40px;
@@ -181,21 +97,77 @@ body {
 
 .about-text {
     width: 100%;
-    font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #000;
     text-align: left;
     line-height: 1.6;
 }
 
 .contact-text {
-    font-family: Arial, sans-serif;
     font-size: 24px;
-    color: #000;
     text-align: left;
 }
 
-/* Responsive adjustments */
+/* ── Poems ── */
+.poems-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.poem-nav-item {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.poem-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto; /* allow horizontal scroll for long lines */
+}
+
+.poem-header {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.poem-text {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    white-space: pre; /* preserve line breaks and spaces; no wrapping */
+    overflow-wrap: normal; /* don't force breaks */
+    word-break: normal; /* don't break words */
+    line-height: 0.8;
+}
+
+/* ── Navigation buttons ── */
+.nav-button {
+    position: fixed;
+    left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: lowercase;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    top: 20px;
+}
+
+.home-button {
+    bottom: 20px;
+}
+
+/* ── Responsive ── */
 @media (max-width: 768px) {
     body {
         height: auto;
@@ -239,11 +211,6 @@ body {
         max-width: 70vw;
     }
 
-    .about-text {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
     .poems-navigation {
         gap: 20px;
     }
@@ -268,20 +235,21 @@ body {
         line-height: 1.1;
     }
 
+    .nav-button {
+        font-size: 16px;
+    }
+
     .home-button {
         bottom: 12px;
         left: 12px;
-        font-size: 16px;
     }
 
     .back-button {
         top: 12px;
         left: 12px;
-        font-size: 16px;
     }
 
     .contact-text {
         font-size: 20px;
     }
 }
-
