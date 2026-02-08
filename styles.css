@@ -64,6 +64,15 @@ a:hover {
     font-size: 16px;
     text-decoration: none;
     text-transform: lowercase;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.header-nav-item.active {
+    background-color: #c0392b;
+    color: white;
+    border-radius: 0;
 }
 
 /* ── Layout (homepage) ── */
@@ -126,6 +135,11 @@ a:hover {
     display: flex;
 }
 
+.two-column-image-container a {
+    display: block;
+    text-decoration: none;
+}
+
 .two-column-image {
     max-width: 400px;
     width: 100%;
@@ -135,19 +149,17 @@ a:hover {
 
 .two-column-content {
     flex: 1;
-    display: flex;
+    display: block;
+    width: 100%;
 }
 
 .about-text {
     width: 100%;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 16px;
     text-align: left;
     line-height: 1.6;
-}
-
-.contact-text {
-    font-size: 24px;
-    text-align: left;
+    display: block;
 }
 
 /* ── Writing grid ── */
@@ -219,6 +231,20 @@ a:hover {
     font-size: 32px;
     margin-bottom: 30px;
     text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.poem-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.poem-header a:hover {
+    opacity: 1;
+    font-style: normal;
+    color: #c0392b;
+    text-decoration: underline;
 }
 
 .poem-text {
@@ -313,7 +339,4 @@ a:hover {
         line-height: 1.1;
     }
 
-    .contact-text {
-        font-size: 20px;
-    }
 }
