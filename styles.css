@@ -206,6 +206,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.poem-card-byline {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
 .poem-card-excerpt {
     font-size: 13px;
     line-height: 1.4;
