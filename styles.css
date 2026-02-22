@@ -275,6 +275,24 @@ a:hover {
     line-height: 0.8;
 }
 
+.note-text {
+    width: 100%;
+    max-width: 680px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+    color: inherit;
+}
+
+.note-text p {
+    margin: 0 0 1.2em 0;
+}
+
+.note-text p:last-child {
+    margin-bottom: 0;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
     .header-content {
