@@ -255,6 +255,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.poem-subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin-top: -22px;
+    margin-bottom: 30px;
+}
+
 .poem-text {
     width: 100%;
     font-family: Georgia, 'Times New Roman', serif;
