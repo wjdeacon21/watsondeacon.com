@@ -227,6 +227,13 @@ a:hover {
     text-indent: -1.5em;
 }
 
+.note-card-excerpt {
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #333;
+}
+
 /* ── Poems ── */
 .poem-container {
     padding: 40px;
